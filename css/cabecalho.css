@@ -1,0 +1,117 @@
+
+.cabecalho {
+  background-color: var(--cor-principal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.cabecalho_logo{
+  max-width: 350px;
+  transition: 0.5s ease-in-out;
+}
+.cabecalho_logo:hover{
+  transform: scale(1.05);
+}
+
+
+.menu_hamburguer {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cabecalho_nav {
+  display: flex;
+  z-index: 9999;
+}
+
+.cabecalho_menu {
+  display: flex;
+  gap: 10px;
+}
+
+
+.cabecalho_menu_item{
+  color:var(--cor-secundaria);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  font-size: 24px;
+  border: 1px solid var(--cor-principal);
+
+}
+
+.cabecalho_menu_item:hover{
+  background-color: var(--cor-principal);
+  border: 1px solid var(--cor-secundaria)
+
+}
+
+.cabecalho_botao{
+
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
+
+}
+
+.cabecalho_botao:hover{
+  color: var(--cor-principal);
+  background-color: var(--cor-secundaria)
+}
+
+
+
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 10px;
+    position: static;
+  }
+
+  .cabecalho_logo{
+    max-width: 200px;
+  }
+  .menu_hamburguer {
+    display: block;
+  }
+
+  .cabecalho_nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--cor-principal);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cabecalho_menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cabecalho_nav.ativo {
+    display: block;
+  }
+  .cabecalho_botao{
+    display: none;
+  }
+}
