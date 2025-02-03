@@ -13,7 +13,7 @@
 }
 
 .cabecalho_logo{
-  max-width: 350px;
+  max-width: 300px;
   transition: 0.5s ease-in-out;
 }
 .cabecalho_logo:hover{
@@ -46,7 +46,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
-  font-size: 24px;
+  font-size: 18px;
   border: 1px solid var(--cor-principal);
 
 }
@@ -63,7 +63,7 @@
   color: var(--cor-secundaria);
   border: 1px solid var(--cor-secundaria);
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 10px;
   font-size: 24px;
   transition: 0.3s ease-in-out;

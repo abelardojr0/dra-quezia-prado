@@ -92,6 +92,8 @@
   .atendimentos_container{
     grid-template-columns: 1fr;
   }
-
+  .atendimentos_titulo{
+    font-size: 40px;
+  }
 
 }

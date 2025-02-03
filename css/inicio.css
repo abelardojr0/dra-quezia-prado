@@ -29,10 +29,10 @@
   flex-direction: column;
   width: 50%;
   height: 100%;
-  gap: 250px;
+  gap: 150px;
   color: var(--cor-secundaria);
   padding-left: 150px;
-  padding-top: 120px;
+  padding-top: 90px;
 }
 .inicio_infos_pessoal{
   display: flex;
@@ -40,15 +40,15 @@
   gap: 40px;
 }
 .inicio_infos_titulo{
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .inicio_infos_cargo{
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
 }
 .inicio_infos_titulo_esp{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
   color: var(--cor-destaque);
 
@@ -69,10 +69,10 @@
   text-decoration: none;
   padding: 20px 35px;
   border-radius: 10px;
-  font-size: 32px;
+  font-size: 24px;
   transition: 0.3s ease-in-out;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
-  max-width: 650px;
+  max-width: 450px;
   text-align: center;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .lista_especialidades{
-  font-size: 32px;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -108,19 +108,19 @@
 
   .inicio{
     flex-direction: column;
-    padding: 0px;
   border-radius: 0px 0px 80px 80px;
+  padding-top: 0px;
 
   }
 
   .inicio_infos{
     width: 100%;
-    padding: 10px;
+    padding: 30px;
     padding-top: 30px;
   }
 
   .inicio_infos_botao{
-    max-width: 70%;
+    max-width: 80%;
     align-self: center;
     font-size: 18px;
   }

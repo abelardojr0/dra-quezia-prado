@@ -41,3 +41,22 @@
   transform: scale(1.1);
   background-color: var(--cor-destaque)b1;
 }
+
+@media (max-width: 768px) {
+  .agendar{
+text-align: center;
+padding: 20px;
+  }
+  
+  .agendar_titulo{
+    font-size: 24px;
+  }
+
+  .agendar_botao{
+    padding: 10px 20px;
+    font-size: 18px;
+    max-width: 350px;
+  }
+  
+
+}
