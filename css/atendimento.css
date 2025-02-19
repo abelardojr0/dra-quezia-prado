@@ -1,0 +1,76 @@
+.atendimento_container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.atendimento_cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.atendimento_titulo{
+  font-size: 60px;
+  color: var(--cor-secundaria);
+}
+.atendimento_infos{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.atendimentos_textos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.atendimentos_textos p{
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.atendimentos_textos span{
+  color: var(--cor-destaque);
+  font-weight: bold;
+}
+
+
+.atendimento_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #e0d0c0ad;
+  border-radius: 15px;
+  color: var(--cor-destaque);
+  max-height: 650px;
+}
+
+.atendimento_card img{
+  max-width: 300px;
+  border-radius: 15px;
+
+}
+
+.atendimento_card h3{
+  font-size: 32px;
+}
+
+.atendimento_card a{
+  background-color: var(--cor-destaque);
+  color: white;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.atendimento_card a:hover{
+  transform: scale(1.05);
+
+}

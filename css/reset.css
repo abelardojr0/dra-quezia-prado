@@ -75,3 +75,79 @@ select:hover {
 	background-color: var(--cor-destaque);
 	color: white;
 }
+
+section {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+header {
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+.swiper-container {
+  width: 100%;
+  padding: 0 40px; /* Adiciona um espaçamento lateral para evitar sobreposição das setas */
+  position: relative; /* Mantém as setas posicionadas corretamente */
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+
+}
+
+.swiper-wrapper img {
+  width: 100%;
+	width: 250px;
+	height: 400px;
+  border-radius: 10px;
+	transition: 0.3s ease-in-out;
+}
+
+.swiper-wrapper img:hover {
+	transform: scale(1.05);
+	z-index: 99999;
+}
+
+/* Ajusta a posição das setas */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor visibilidade */
+  color: white; /* Deixa as setas brancas */
+  border-radius: 50%; /* Deixa as setas redondas */
+}
+
+/* Garante que as setas fiquem dentro da área visível */
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+
+
+main{
+	padding-top: 100px;
+	min-height: 100vh;
+}

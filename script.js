@@ -6,45 +6,62 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.classList.toggle('ativo');
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('section');
+  const header = document.querySelector('header');
+  let lastScrollY = window.scrollY;
 
-let temas = [
-  {
-    cor_principal: '#e0d0c0',
-    cor_secundaria: '#65232d',
-    cor_destaque: '#b6592e',
-  },
-  {
-    cor_principal: '#65232d',
-    cor_secundaria: '#b6592e',
-    cor_destaque: '#e0d0c0',
-  },
-  {
-    cor_principal: '#b6592e',
-    cor_secundaria: '#e0d0c0',
-    cor_destaque: '#65232d',
-  },
-  {
-    cor_principal: '#b6592e',
-    cor_secundaria: '#65232d',
-    cor_destaque: '#e0d0c0',
-  },
-];
+  function checkScroll() {
+    const triggerBottom = window.innerHeight * 0.6; // Reduzindo a altura do gatilho
 
-function trocarCores() {
-  let select = document.getElementById('tema');
-  let indice = select.value;
-  let tema = temas[indice];
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
 
-  document.documentElement.style.setProperty(
-    '--cor-principal',
-    tema.cor_principal,
-  );
-  document.documentElement.style.setProperty(
-    '--cor-secundaria',
-    tema.cor_secundaria,
-  );
-  document.documentElement.style.setProperty(
-    '--cor-destaque',
-    tema.cor_destaque,
-  );
-}
+      if (sectionTop < triggerBottom) {
+        section.classList.add('show');
+      } else {
+        section.classList.remove('show');
+        section.classList.add('hide');
+      }
+    });
+  }
+
+  function handleHeaderVisibility() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      header.classList.add('hidden');
+    } else {
+      header.classList.remove('hidden');
+    }
+
+    lastScrollY = currentScrollY;
+  }
+
+  window.addEventListener('scroll', () => {
+    checkScroll();
+    handleHeaderVisibility();
+  });
+
+  checkScroll();
+});
+
+const swiper = new Swiper('.swiper-container', {
+  loop: true, // Faz o carousel reiniciar automaticamente sem espaço em branco
+  spaceBetween: 10, // Espaçamento entre as imagens
+  slidesPerView: 'auto', // Mantém o tamanho correto das imagens
+  centeredSlides: false, // Remove centralização forçada que causa espaçamento extra
+  loopFillGroupWithBlank: false, // Impede que o Swiper adicione espaços vazios
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000, // Muda a cada 3s
+    disableOnInteraction: false, // Continua rodando mesmo após interação do usuário
+  },
+});

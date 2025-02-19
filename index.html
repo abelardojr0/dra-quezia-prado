@@ -23,6 +23,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -49,12 +56,6 @@
       Agendar
       <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <select id="tema" onchange="trocarCores()">
-      <option value="0">Tema 1</option>
-      <option value="1">Tema 2</option>
-      <option value="2">Tema 3</option>
-      <option value="3">Tema 4</option>
-    </select>
   </header>
 
   <main>
@@ -95,7 +96,7 @@
         <div class="atendimentos_container_card">
           <img class="atendimentos_container_card_foto" src="https://saudeemdia.com.br/wp-content/uploads/2023/03/Menopausa.jpg" alt="Imagem ilustrativa sobre menopausa" loading="lazy">
           <h2 class="atendimentos_container_card_titulo">Menopausa</h2>
-          <a class="atendimentos_container_card_botao" href="#menopausa" role="button" aria-label="Saiba mais sobre menopausa">
+          <a class="atendimentos_container_card_botao" href="./pages/menopausa.html" role="button" aria-label="Saiba mais sobre menopausa">
             Saiba Mais
           </a>
         </div>
@@ -103,7 +104,7 @@
         <div class="atendimentos_container_card">
           <img class="atendimentos_container_card_foto" src="https://www.scopegineco.com.br/wp-content/uploads/2022/06/Uroginecologia-1.jpg.webp" alt="Imagem ilustrativa sobre uroginecologia" loading="lazy">
           <h2 class="atendimentos_container_card_titulo">Uroginecologia</h2>
-          <a class="atendimentos_container_card_botao" href="#uroginecologia" role="button" aria-label="Saiba mais sobre uroginecologia">
+          <a class="atendimentos_container_card_botao" href="./pages/uroginecologia.html" role="button" aria-label="Saiba mais sobre uroginecologia">
             Saiba Mais
           </a>
         </div>
@@ -141,23 +142,66 @@
         <h2 class="sobre_subtitulo">Sobre</h2>
         <h3 class="sobre_texto_container_nome">Dra. Quezia Prado</h3>
         <p class="sobre_texto_container_texto">
-          Ginecologista especializada em disfunções do assoalho pélvico, uroginecologia e cirurgias ginecológicas.
-          Realizo inserção e retirada de DIU (com ou sem hormônio) e Implanon, além de acompanhar todas as fases da saúde feminina,
-          incluindo climatério e reposição hormonal. Minha missão é proporcionar bem-estar e conforto às pacientes, sempre com empatia e cuidado.
-          Apaixonada pela família, esportes e um bom café, acredito que levar a vida com leveza faz toda a diferença!
+          Oi, sou a Dra Quezia, médica ginecologista e uroginecologista, e será um enorme prazer te ter por aqui. Sou paraense, formada em Belém -PA, com residência e subespecialidade feitas em São Paulo, na Casa Maternal e Faculdade de Medicina do ABC. <br>
+
+          Minhas áreas de atuação são na ginecologia geral, reposição hormonal, envelhecimento saudável, dores pélvicas, planejamento familiar e disfunções de assoalho pélvico. Além disso, realizo diversas cirurgias ginecológicas e tenho experiência com DIUs, Implanon. <br>
+
+          Trato doenças como perda urinária, prolapsos genitais, infecções de urina de repetição, candidíase, vaginose, endometriose, miomatose uterina, adenomiose, síndrome dos ovários policísticos, e muito mais. 
+          A reposição hormonal, e o olhar específico para a mulher do climatério e menopausa fazem parte do meu cotidiano e não há nada mais satisfatório do que ver essas pacientes voltarem a ficar de bem consigo mesmas! <br>
+
+          No meu consultório, já consegui devolver qualidade de vida para várias mulheres através de uma investigação profunda e um tratamento adequado e personalizado. Bem estar e satisfação são as regras que regem nossos encontros de rotina! <br>
+
+          Fiquem à vontade para clicar em um dos tópicos descritos aqui e entenderem um pouco mais sobre cada tema!
+
         </p>
       </div>
     </section>
 
+
     <section class="instagram">
       <h2 class="instagram_titulo">Instagram</h2>
-      <div class="instagram_container">
-        <img class="instagram_item" src="./assets/insta1.jpeg" alt="Foto do Instagram">
-        <img class="instagram_item meio" src="./assets/insta2.jpeg" alt="Foto do Instagram">
-        <img class="instagram_item" src="./assets/insta3.jpeg" alt="Foto do Instagram">
-      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto1.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto2.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto3.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto4.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto5.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto6.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto7.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto8.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto9.jpeg" alt="Foto do Instagram">
+          </a>
+          <a href="https://www.instagram.com/p/POST1" class="swiper-slide">
+            <img src="./assets//insta/foto10.jpeg" alt="Foto do Instagram">
+          </a>
 
+        </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
+    
 
     <section class="agendar">
       <h2 class="agendar_titulo">Agende sua consulta!</h2>
@@ -168,6 +212,37 @@
 
       </a>
     </section>
+
+
+    <section class="instagram">
+      <h2 class="instagram_titulo">Feedbacks</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img src="./assets/feedback/foto1.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto2.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto3.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto4.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto5.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto6.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto7.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto8.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto9.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto10.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto11.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto12.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto13.jpeg" alt="Foto do Instagram" class="swiper-slide">
+            <img src="./assets/feedback/foto14.jpeg" alt="Foto do Instagram" class="swiper-slide">
+
+        </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
 
 
     <section class="contato" id="contato">
@@ -182,9 +257,9 @@
             <i class="fa-solid fa-location-dot"></i>
             <span>Rua Monsenhor Bruno, número 2510, Joaquim Távora, Fortaleza</span>
           </a>
-          <a href="mailto:contato@draqueziaprado.com" class="contato_links_icons_item" aria-label="Enviar email para contato@draqueziaprado.com">
+          <a href="mailto:consultorioqueziaprado@gmail.com" class="contato_links_icons_item" aria-label="Enviar email para consultorioqueziaprado@gmail.com">
             <i class="fa-solid fa-envelope"></i>
-            <span>contato@draqueziaprado.com</span>
+            <span>consultorioqueziaprado@gmail.com</span>
           </a>
           <a href="tel:85984408674" class="contato_links_icons_item" aria-label="Ligar para (85) 98440-8674">
             <i class="fa-solid fa-phone"></i>
@@ -193,6 +268,10 @@
           <a href="https://www.instagram.com/draqueziapradogineco/" class="contato_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil no Instagram">
             <i class="fa-brands fa-instagram"></i>
             <span> @draqueziapradogineco</span>
+          </a>
+          <a href="https://www.doctoralia.com.br/quezia-prado-nunes/ginecologista/fortaleza" class="contato_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil no Doctoralia">
+            <i class="fa-solid fa-notes-medical"></i>
+            <span> Dra Quezia Prado Nunes</span>
           </a>
           <a href="https://wa.me/85984408674" class="contato_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Contatar via WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
@@ -242,9 +321,9 @@
         <i class="fa-solid fa-location-dot"></i>
         <span>Rua Monsenhor Bruno, número 2510, Joaquim Távora, Fortaleza</span>
       </a>
-      <a href="mailto:contato@draqueziaprado.com" class="rodape_links_icons_item" aria-label="Enviar email para contato@draqueziaprado.com">
+      <a href="mailto:consultorioqueziaprado@gmail.com" class="rodape_links_icons_item" aria-label="Enviar email para consultorioqueziaprado@gmail.com">
         <i class="fa-solid fa-envelope"></i>
-        <span>contato@draqueziaprado.com</span>
+        <span>consultorioqueziaprado@gmail.com</span>
       </a>
       <a href="tel:85984408674" class="rodape_links_icons_item" aria-label="Ligar para (85) 98440-8674">
         <i class="fa-solid fa-phone"></i>
@@ -253,6 +332,10 @@
       <a href="https://www.instagram.com/draqueziapradogineco/" class="rodape_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil no Instagram">
         <i class="fa-brands fa-instagram"></i>
         <span>@draqueziapradogineco</span>
+      </a>
+      <a href="https://www.doctoralia.com.br/quezia-prado-nunes/ginecologista/fortaleza" class="rodape_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil no Doctoralia">
+        <i class="fa-solid fa-notes-medical"></i>
+        <span> Dra Quezia Prado Nunes</span>
       </a>
       <a href="https://wa.me/85984408674" class="rodape_links_icons_item" target="_blank" rel="noopener noreferrer" aria-label="Contatar via WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
