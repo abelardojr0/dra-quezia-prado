@@ -150,3 +150,25 @@ header.hidden {
 main{
 	min-height: 100vh;
 }
+
+@media (max-width: 768px) {
+	.swiper-wrapper img {
+		width: 100%;
+		width: 150px;
+		height: 300px;
+		border-radius: 10px;
+		transition: 0.3s ease-in-out;
+	}
+	
+	
+	/* Ajusta a posição das setas */
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 40px;
+		height: 40px;
+		background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor visibilidade */
+		color: white; /* Deixa as setas brancas */
+		border-radius: 50%; /* Deixa as setas redondas */
+	}
+	
+}
