@@ -1,6 +1,6 @@
-
 .cabecalho {
-  background-color: var(--cor-principal);
+  background-color: var(--cor-base);
+  border-bottom: 2px solid var(--cor-principal);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,14 +12,13 @@
   z-index: 99;
 }
 
-.cabecalho_logo{
+.cabecalho_logo {
   max-width: 300px;
   transition: 0.5s ease-in-out;
 }
-.cabecalho_logo:hover{
+.cabecalho_logo:hover {
   transform: scale(1.05);
 }
-
 
 .menu_hamburguer {
   display: none;
@@ -39,44 +38,38 @@
   gap: 10px;
 }
 
-
-.cabecalho_menu_item{
-  color:var(--cor-secundaria);
+.cabecalho_menu_item {
+  color: var(--cor-secundaria);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   font-size: 18px;
-  border: 1px solid var(--cor-principal);
-
+  border: 1px solid var(--cor-base);
 }
 
-.cabecalho_menu_item:hover{
-  background-color: var(--cor-principal);
-  border: 1px solid var(--cor-secundaria)
-
+.cabecalho_menu_item:hover {
+  background-color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  color: var(--cor-base);
 }
 
-.cabecalho_botao{
-
-  background-color: var(--cor-principal);
-  color: var(--cor-secundaria);
+.cabecalho_botao {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-base);
   border: 1px solid var(--cor-secundaria);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 18px;
   transition: 0.3s ease-in-out;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
-
 }
 
-.cabecalho_botao:hover{
-  color: var(--cor-principal);
-  background-color: var(--cor-secundaria)
+.cabecalho_botao:hover {
+  color: var(--cor-secundaria);
+  background-color: transparent;
 }
-
-
 
 @media (max-width: 768px) {
   .cabecalho {
@@ -84,7 +77,7 @@
     position: static;
   }
 
-  .cabecalho_logo{
+  .cabecalho_logo {
     max-width: 200px;
   }
   .menu_hamburguer {
@@ -111,7 +104,7 @@
   .cabecalho_nav.ativo {
     display: block;
   }
-  .cabecalho_botao{
+  .cabecalho_botao {
     display: none;
   }
 }
