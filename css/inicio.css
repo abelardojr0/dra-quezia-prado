@@ -12,9 +12,9 @@
 .inicio_infos {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 100%;
-  gap: 150px;
+  gap: 40px;
   color: var(--cor-secundaria);
   padding-left: 150px;
   padding-top: 90px;
@@ -42,7 +42,7 @@
 }
 
 .inicio_foto {
-  width: 50%;
+  width: 40%;
   border-radius: 0px 0px 80px 0px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.236);
 }

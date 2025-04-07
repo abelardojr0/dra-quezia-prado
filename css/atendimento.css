@@ -50,11 +50,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   background-color: #e0d0c0ad;
   border-radius: 15px;
   color: var(--cor-destaque);
   max-height: 650px;
+  div {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 .atendimento_card img {
@@ -63,13 +72,13 @@
 }
 
 .atendimento_card h3 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .atendimento_card a {
   background-color: var(--cor-destaque);
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
   font-size: 24px;
   border-radius: 10px;
   text-decoration: none;
