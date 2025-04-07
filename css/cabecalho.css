@@ -1,6 +1,17 @@
 .cabecalho {
-  background-color: var(--cor-base);
-  border-bottom: 2px solid var(--cor-principal);
+  /* background-color: var(--cor-base); */
+  background: linear-gradient(
+    to bottom,
+    #e0d0c0 0%,
+    #e0d0c0 40%,
+    rgba(224, 208, 192, 0.85) 60%,
+    rgba(224, 208, 192, 0.6) 75%,
+    rgba(224, 208, 192, 0.3) 88%,
+    rgba(224, 208, 192, 0.1) 95%,
+    rgba(224, 208, 192, 0.05) 98%,
+    rgba(224, 208, 192, 0) 100%
+  );
+  /* border-bottom: 2px solid var(--cor-principal); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,12 +56,12 @@
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   font-size: 18px;
-  border: 1px solid var(--cor-base);
+  /* border: 1px solid var(--cor-secundaria); */
 }
 
 .cabecalho_menu_item:hover {
   background-color: var(--cor-secundaria);
-  border: 1px solid var(--cor-secundaria);
+  /* border: 1px solid var(--cor-secundaria); */
   color: var(--cor-base);
 }
 
