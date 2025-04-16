@@ -54,7 +54,7 @@
   background-color: #e0d0c0ad;
   border-radius: 15px;
   color: var(--cor-destaque);
-  max-height: 650px;
+  max-height: 750px;
   div {
     padding: 0px 20px;
     display: flex;

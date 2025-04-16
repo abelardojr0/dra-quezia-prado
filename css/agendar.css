@@ -21,7 +21,7 @@
   left: 0;
   width: 200px;
   height: 300px;
-  background-image: url("../assets/detalhe.png");
+  background-image: url("../assets/detalhes/detalhe.png");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -37,7 +37,7 @@
   right: 0;
   width: 200px;
   height: 300px;
-  background-image: url("../assets/detalhe.png");
+  background-image: url("../assets/detalhes/detalhe.png");
   background-size: contain;
   background-repeat: no-repeat;
   transform: scaleX(-1); /* espelha a imagem */
