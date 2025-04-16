@@ -83,6 +83,10 @@
   text-align: center;
   margin-bottom: 30px;
 }
+.maior {
+  padding: 20px 30px;
+  font-size: 32px;
+}
 
 .inicio_infos_botao:hover {
   animation: pulsar 1s infinite;

@@ -10,6 +10,10 @@
   margin-top: 40px;
 }
 
+.detalhes {
+  margin-top: 0px;
+  border-top: 1px solid #65232d49;
+}
 .rodape_infos {
   display: flex;
   justify-content: center;

@@ -14,6 +14,11 @@
   );
 }
 
+.detalhes {
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
 .sobre_imagem_container {
   position: relative;
   border-radius: 10px;
