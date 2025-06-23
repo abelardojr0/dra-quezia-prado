@@ -2,12 +2,18 @@
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
   font-family: "Montserrat", serif;
   text-transform: uppercase;
-  margin-top: 40px;
+  border-top: 1px solid;
+}
+.rodape_master {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .detalhes {
@@ -78,8 +84,13 @@
   text-decoration: underline;
 }
 
+.dev {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
 @media (max-width: 768px) {
-  .rodape {
+  .rodape_master {
     padding: 5px;
     flex-direction: column;
     gap: 30px;
